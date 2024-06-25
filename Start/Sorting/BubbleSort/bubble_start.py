@@ -4,6 +4,11 @@
 
 def bubbleSort(dataset):
     # TODO: start with the array length and decrement each time
+    for i in range(len(dataset)):
+        for j in range(len(dataset) - 1):
+            if dataset[j] > dataset[j + 1]:
+                dataset[j], dataset[j + 1] = dataset[j + 1], dataset[j]
+        
 
     print("Current state: ", dataset)
 
